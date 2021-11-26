@@ -1,0 +1,114 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list {
+    background: #fff url("../img/ajax-loader.gif") center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+    font-family: "slick";
+    font-weight: normal;
+    font-style: normal;
+
+    src: url("../fonts/slick/slick.eot");
+    src: url("../fonts/slick/slick.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/slick/slick.woff") format("woff"), url("../fonts/slick/slick.ttf") format("truetype"),
+        url("../fonts/slick/slick.svg#slick") format("svg");
+}
+/* Arrows */
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+
+    background-color: #6db8bb;
+    border-radius: 50%;
+    z-index: 3;
+    transition-property: background-color;
+    transition-duration: 1.3s;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+}
+.slick-prev:hover,
+.slick-next:hover {
+    transition-property: background-color;
+    transition-duration: 1.3s;
+    background-color: #fea02f;
+}
+.slick-prev:focus,
+.slick-next:focus {
+}
+
+.slick-prev {
+    left: -85px;
+    background-image: url(../img/slider_left_btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+[dir="rtl"] .slick-prev {
+    right: -25px;
+    left: auto;
+}
+
+.slick-next {
+    right: -85px;
+    background-image: url(../img/slider_right_btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+[dir="rtl"] .slick-next {
+    right: auto;
+    left: -25px;
+}
+
+/* Dots */
+.slick-dotted.slick-slider {
+    margin-bottom: 30px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin: 0 10px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li:hover {
+    background-color: #ffffff57;
+}
+.slick-dots li button {
+    font-size: 0;
+    display: block;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+}
+.slick-dots .slick-active {
+    background-color: #ffffff;
+}
+.slick-dots .slick-active:hover {
+    background-color: #ffffff;
+}
